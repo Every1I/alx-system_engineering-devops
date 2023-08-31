@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap1 | sed '/^.\{1,\}$/s/$/,/' | sed 's/^\.\{1,\}\//&\n/' | LC_COLLATE=C sort -d -f | sed ':a;N;$!ba;s/\n/, /g'
+ls -mF | grep '/$' -a | grep '^\..*' -A1 -1v 
