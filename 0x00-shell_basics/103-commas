@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -Am | grep -E '/$|^\..*|^[A-Za-z0-9]|^\.\.?$' ; echo)
+(ls -AmvF)
