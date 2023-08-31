@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -mF | grep '/$' -a | grep '^\..*' -A1 -1v 
+ls -m -F | grep '/$' -a | grep '^\..*' -A1 | { echo '.'; echo '..'; grep '^\..*'; ls -A1 | grep -v '^\..*'; } -1v -1v | grep -E '[A-Za-z0-9]|^\.\.?$' -1v | grep -E '[A-Za-z0-9]|^\.\.?$' ; echo
