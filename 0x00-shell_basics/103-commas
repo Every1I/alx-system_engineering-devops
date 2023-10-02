@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -mFaA1p)
+ls -xamp
